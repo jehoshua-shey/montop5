@@ -4,8 +4,18 @@ unordered_multichain_mode: true
 
 networks:
   - id: 10143
-    rpc_config:
-      url: https://testnet-rpc.monad.xyz  # Replace with actual RPC URL
+    start_block: 22159590
+    contracts:
+      - name: Magma
+        address: 0x2c9C959516e9AAEdB2C748224a41249202ca8BE7
+      - name: Monad2048
+        address: 0xe0FA8195AE92b9C473c0c0c12c2D6bCbd245De47
+      - name: WrappedMonad
+        address: 0x760AfE86e5de5fa0Ee542fc7B7B713e1c5425701
+      - name: Ambient
+        address: 0x88B96aF200c8a9c35442C8AC6cd3D22695AaE4F0
+      - name: Madness
+        address: 0x64Aff7245EbdAAECAf266852139c67E4D8DBa4de
 
 contracts:
   - name: Magma
