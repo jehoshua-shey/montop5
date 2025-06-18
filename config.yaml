@@ -1,7 +1,12 @@
+name: montop5
+rollback_on_reorg: true
+unordered_multichain_mode: true
+
 networks:
   - id: 10143
     rpc_config:
       url: https://testnet-rpc.monad.xyz  # Replace with actual RPC URL
+
 contracts:
   - name: Magma
     address: 0x2c9C959516e9AAEdB2C748224a41249202ca8BE7
