@@ -1,0 +1,13 @@
+type ContractTransaction @entity {
+  id: ID!
+  contract: String!
+  transactionHash: Bytes!
+  blockNumber: BigInt!
+  timestamp: BigInt!
+}
+
+type Contract @entity {
+  id: ID!
+  address: String!
+  transactionCount: BigInt!
+}

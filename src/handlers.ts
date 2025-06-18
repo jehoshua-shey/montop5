@@ -1,4 +1,4 @@
-import { ContractTransaction, Contract } from "../generated/schema";
+import { ContractTransaction, Contract } from "generated";
 
 export function handleAllEvents(event: Event): void {
   let txId = event.address + "-" + event.transactionHash.toHex();
